@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Climate Task</title>
+    <style>
+      #div {
+        border: 1px solid black;
+        width: 500px;
+        height: 200px;
+        margin-top: 170px;
+        margin-left: 490px;
+        text-align: center;
+        border-radius: 10px;
+        background-color: aquamarine;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        animation-name: bg;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes bg {
+        0% {
+          background-color: aqua;
+        }
+        25% {
+          background-color: rosybrown;
+        }
+        50% {
+          background-color: skyblue;
+        }
+        75% {
+          background-color: chartreuse;
+        }
+        100% {
+          background-color: burlywood;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div">
+      <h2>Today's Weather</h2>
+      <p id="getOutput">
+        Enter the Location :
+        <input id="input" type="text" placeholder="eg: Chennai,Ooty" />
+      </p>
+      <p id="setInput"></p>
+    </div>
+    <script src="../JavaScript/ClimateTask.js"></script>
+  </body>
+</html>
